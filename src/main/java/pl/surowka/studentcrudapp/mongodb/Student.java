@@ -1,19 +1,21 @@
-package pl.surowka.studentcrudapp.student;
+package pl.surowka.studentcrudapp.mongodb;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Document
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
-    @javax.persistence.Id
-    private int Id;
+
+    @org.springframework.data.annotation.Id
+    private Integer Id;
     private String firstName;
     private String lastName;
     private String yearOfStudy;
