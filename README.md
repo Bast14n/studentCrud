@@ -1,1 +1,1 @@
-# studentCrud s
+# studentCrud springboot aplication with mongodb
